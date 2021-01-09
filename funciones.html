@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Funciones</title>
+  </head>
+  <body>
+    <script>
+      var numero1=10;
+      var numero2=5;
+      var resultado=numero1+numero2;
+      document.write(resultado);
+      document.write('<br>');
+      function suma(numero1,numero2){
+        var resultado=numero1+numero2;
+        return resultado;
+      }
+      document.write(suma(10,3)+'<br>');
+      document.write(suma(2,3));
+      //Funcione autoinvocadas
+      (function(){
+        alert('hola');
+      }());
+    </script>
+  </body>
+</html>

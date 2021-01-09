@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scope Javascript</title>
+  </head>
+  <body>
+    <script>
+      //Global o local
+
+      //--------- Variable local
+        // function saludo(){
+        //   var texto='Hola Mundo';
+        //   //document.write(texto);
+        // }
+        // saludo();
+        //---------Funciones Anidadas Variable local
+        // function saludo(){
+        //   var texto ='Hola Mundo';
+        //   function mensaje(){
+        //     console.log(texto);
+        //   }
+        //   mensaje();
+        // }
+        // saludo();
+        //--------------Variables Globales
+        // var texto='Hola Mundo';
+        // function saludo(){
+        //   console.log(texto);
+        //   texto='Hola Mundo, Modificado';
+        //   console.log(texto);
+        // }
+        // saludo();
+        //---------Importante
+        // function saludo(){
+        //   mensaje='Hola Mundo';
+        // }
+        // saludo();
+        // console.log(mensaje);
+        //------Como proteger nuestras variables de codigo de terceros
+        (function(){
+          var mensaje='hola mundo';
+        }())
+    </script>
+  </body>
+</html>

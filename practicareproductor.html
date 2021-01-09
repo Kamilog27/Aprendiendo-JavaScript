@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet"/>
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="video-js.css">
+    <script src="video.js"></script>
+    <title>Reproductor Personalizado</title>
+  </head>
+  <body>
+    <video width="500" id="fm-video" class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls>
+      <source src="media/intro.mp4" type="video/mp4" >
+    </video>
+    <script>
+      var reproductor=videojs('fm-video',{
+        fluid:true
+      });
+    </script>
+  </body>
+</html>

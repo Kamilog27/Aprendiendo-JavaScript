@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Eventos de tiempo</title>
+  </head>
+  <body>
+    <button type="button" id="btn-iniciar" name="button">iniciar</button>
+    <button type="button" id="btn-detener" name="button">detener</button>
+    <script>
+      //------setTimeout()
+      function saludo(){
+        alert('hola mundo');
+      }
+      //  var tiempo=setTimeout(saludo,3000);
+      //  clearTimeout(tiempo);
+      // document.getElementById('btn-iniciar').addEventListener('click',function(){
+      //   setTimeout(saludo,3000);
+      // });
+      //----setInterval()
+      var intervalo=setInterval(saludo,3000);
+      document.getElementById('btn-detener').addEventListener('click',function(){
+          clearInterval(intervalo);
+      });
+
+    </script>
+  </body>
+</html>
